@@ -2,7 +2,7 @@
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 #read -p "Masukan Domain (contoh : Dragon)" domen
-DOMAIN=vpsstore-r32wrt.xyz
+DOMAIN=
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 dns=${sub}.domain
 CF_ID=
