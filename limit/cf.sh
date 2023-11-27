@@ -2,11 +2,11 @@
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 #read -p "Masukan Domain (contoh : Dragon)" domen
-DOMAIN=vip.myconfig.me
+DOMAIN=vpsstore-r32wrt.xyz
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.domain
-CF_ID=emailmu@gmail.com
-CF_KEY=key publikmu
+dns=${sub}.vpsstore-r32wrt.xyz
+CF_ID=amandafitrizharifa009@gmail.com
+CF_KEY=6ed124af651064c642b83e93a175fa09f989d
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
