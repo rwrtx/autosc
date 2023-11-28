@@ -18,7 +18,7 @@ clear
 #	 menu
 #else
 
-echo -e "Installing TCP BBR Mod WINGS VPN"
+echo -e "Installing TCP BBR Mod R32-WRTx TUNNELING "
 echo -e "Please Wait BBR Installation Will Starting . . ."
 sleep 5
 clear
