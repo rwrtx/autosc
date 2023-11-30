@@ -318,7 +318,7 @@ restart_system(){
 <b>⚡AUTOSCRIPT PREMIUM⚡</b>
 <code>────────────────────</code>
 <code>Owner    :</code><code>$username</code>
-<code>OS       :</code><code>$namaos</code>
+<code>OS       :</code><code>$MODEL</code>
 <code>Domain   :</code><code>$domain</code>
 <code>IPVPS    :</code><code>$ip</code>
 <code>ISP      :</code><code>$isp</code>
