@@ -318,8 +318,9 @@ restart_system(){
 <b>⚡AUTOSCRIPT PREMIUM⚡</b>
 <code>────────────────────</code>
 <code>Owner    :</code><code>$username</code>
+<code>OS       :</code><code>$namaos</code>
 <code>Domain   :</code><code>$domain</code>
-<code>IPVPS    :</code><code>$ipvps</code>
+<code>IPVPS    :</code><code>$ipsaya</code>
 <code>ISP      :</code><code>$isp</code>
 <code>RAM      :</code><code>$uram</code>
 <code>CITY     :</code><code>$CITY</code>
