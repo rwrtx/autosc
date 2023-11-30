@@ -320,10 +320,10 @@ restart_system(){
 <code>Owner    :</code><code>$username</code>
 <code>OS       :</code><code>$namaos</code>
 <code>Domain   :</code><code>$domain</code>
-<code>IPVPS    :</code><code>$ipsaya</code>
+<code>IPVPS    :</code><code>$ip</code>
 <code>ISP      :</code><code>$isp</code>
 <code>RAM      :</code><code>$uram</code>
-<code>CITY     :</code><code>$CITY.strip</code>
+<code>CITY     :</code><code>$CITY</code>
 <code>Time     :</code><code>$TIMEZONE</code>
 <code>Exp Sc.  :</code><code>$exp</code>
 <code>────────────────────</code>
