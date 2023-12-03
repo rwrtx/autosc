@@ -10,10 +10,8 @@ CHATID="5423129090"
 <code>────────────────────</code>
 <b>⚠️ NOTIFICATIONS MULTI LOGIN ⚠️</b>
 <code>────────────────────</code>
-<code>IP               : </code><code>$IP</code>
-<code>Username         : </code><code>$user</code>
-<code>Host             : </code> <code>$domain</code>
-<code>Limit Ip         : </code><code>$data</code>
+<code>Username : </code><code>$user</code>
+<code>Limit Ip : </code><code>$data</code>
 <code>────────────────────</code>
 "
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
