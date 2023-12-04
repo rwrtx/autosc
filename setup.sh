@@ -17,6 +17,8 @@ GRAY="\e[1;30m"
 NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
+ISP=$(cat /etc/xray/isp)
+CITY=$(cat /etc/xray/city)
 TIMES="10"
 CHATID="5423129090"
 KEY="6782755839:AAEtaEt8JKHdzXvIDdzNAn1kYuTQxOdgyH4"
@@ -321,10 +323,9 @@ restart_system(){
 <code>IPVPS      :</code><code>$MYIP</code>
 <code>Domain     :</code><code>$domain</code>
 <code>ISP        :</code><code>$ISP</code>
+<code>LOKASI     :</code><code>$CITY</code>
 <code>Time       :</code><code>$TIMEZONE</code>
 <code>Exp Sc.    :</code><code>$exp</code>
-<code>User Login :</code> <code>root</code>
-<code>Pass Login :</code> <code>bok</code>
 <code>────────────────────</code>
 <b>   R32-WRTx TUNNELING   </b>
 <code>────────────────────</code>
