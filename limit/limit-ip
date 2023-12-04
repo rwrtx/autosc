@@ -7,12 +7,13 @@ CHATID="5423129090"
   TIME="10"
    URL="https://api.telegram.org/bot$KEY/sendMessage"
   TEXT="
-<code>────────────────────</code>
 <b>⚠️ NOTIFICATIONS MULTI LOGIN ⚠️</b>
 <code>────────────────────</code>
-<code>Username : </code><code>$user</code>
-<code>Limit Ip : </code><code>$jum2</code>
-<code>────────────────────</code>
+<code>IP               : </code><code>$IP</code>
+<code>Username         : </code><code>$user</code>
+<code>Host             : </code> <code>$domain</code>
+<code>Limit Ip         : </code><code>$data</code>
+<code>────────────────────</code
 <b>    R32-WRTx TUNNELING   </b>
 <code>────────────────────</code>
 "
