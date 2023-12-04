@@ -6,7 +6,7 @@ DOMAIN=freepalestina.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 dns=${sub}.freepalestina.my.id
 CF_ID=amandafitrizharifa009@gmail.com
-CF_KEY=6ed124af651064c642b83e93a175fa09f989d
+CF_KEY=c1bae774aa7bc98ee7b7bcb122335b61cd652
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${dns}..."
