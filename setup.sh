@@ -317,12 +317,14 @@ restart_system(){
 <code>────────────────────</code>
 <b>⚡AUTOSCRIPT PREMIUM⚡</b>
 <code>────────────────────</code>
-<code>Owner    :</code><code>$username</code>
-<code>IPVPS    :</code><code>$MYIP</code>
-<code>Domain   :</code><code>$domain</code>
-<code>ISP      :</code><code>${ISP}, ${CITY}</code>
-<code>Time     :</code><code>$TIMEZONE</code>
-<code>Exp Sc.  :</code><code>$exp</code>
+<code>Owner      :</code><code>$username</code>
+<code>IPVPS      :</code><code>$MYIP</code>
+<code>Domain     :</code><code>$domain</code>
+<code>ISP        :</code><code>$ISP</code>
+<code>Time       :</code><code>$TIMEZONE</code>
+<code>Exp Sc.    :</code><code>$exp</code>
+<code>User Login :</code> <code>root</code>
+<code>Pass Login :</code> <code>bok</code>
 <code>────────────────────</code>
 <b>   R32-WRTx TUNNELING   </b>
 <code>────────────────────</code>
