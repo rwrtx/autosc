@@ -33,10 +33,10 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To R32WRTX STORE SCRIPT ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To R32WRTx TUNNELING SCRIPT ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Auther : ${green}RW32RTX VPN® ${NC}${YELLOW}(${NC} ${green} R32WRTX STORE ${NC}${YELLOW})${NC}"
-echo -e " © Recode By R32WRTX VPN STORE${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "  Auther : ${green}RW32RTx VPN® ${NC}${YELLOW}(${NC} ${green} R32WRTX VPSSTORE ${NC}${YELLOW})${NC}"
+echo -e " © Recode By R32WRTX VPSSTORE${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -318,12 +318,9 @@ restart_system(){
 <b>⚡AUTOSCRIPT PREMIUM⚡</b>
 <code>────────────────────</code>
 <code>Owner    :</code><code>$username</code>
-<code>OS       :</code><code>$MODEL</code>
+<code>IPVPS    :</code><code>$MYIP</code>
 <code>Domain   :</code><code>$domain</code>
-<code>IPVPS    :</code><code>$ip</code>
-<code>ISP      :</code><code>$isp</code>
-<code>RAM      :</code><code>$uram</code>
-<code>CITY     :</code><code>$CITY</code>
+<code>ISP      :</code><code>${ISP}, ${CITY}</code>
 <code>Time     :</code><code>$TIMEZONE</code>
 <code>Exp Sc.  :</code><code>$exp</code>
 <code>────────────────────</code>
