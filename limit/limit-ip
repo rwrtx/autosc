@@ -9,10 +9,10 @@ CHATID="5423129090"
   TEXT="
 <b>⚠️ NOTIFICATIONS MULTI LOGIN ⚠️</b>
 <code>────────────────────</code>
-<code>IP               : </code><code>$IP</code>
-<code>Host             : </code> <code>$domain</code>
-<code>Username         : </code><code>$user</code>
-<code>Limit Ip         : </code><code>$data</code>
+<code>IP        : </code><code>$IP</code>
+<code>Host      : </code> <code>$domain</code>
+<code>Username  : </code><code>$user</code>
+<code>Limit Ip  : </code><code>$data</code>
 <code>────────────────────</code
 <b>    R32-WRTx TUNNELING   </b>
 <code>────────────────────</code>
