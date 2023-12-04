@@ -321,7 +321,7 @@ restart_system(){
 <code>IPVPS      :</code><code>$MYIP</code>
 <code>Domain     :</code><code>$domain</code>
 <code>ISP        :</code><code>$ISP</code>
-<code>LOKASI     :</code><code>$CITY</code>
+<code>OS         :</code><code>${OS_name}, ${Kernel}</code>
 <code>Time       :</code><code>$TIMEZONE</code>
 <code>Exp Sc.    :</code><code>$exp</code>
 <code>────────────────────</code>
