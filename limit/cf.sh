@@ -2,9 +2,9 @@
 MYIP=$(wget -qO- icanhazip.com);
 apt install jq curl -y
 #read -p "Masukan Domain (contoh : Dragon)" domen
-DOMAIN=freepalestina.my.id
+DOMAIN=vpsstore-r32wrt.xyz
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.freepalestina.my.id
+dns=${sub}.vpsstore-r32wrt.xyz
 CF_ID=amandafitrizharifa009@gmail.com
 CF_KEY=c1bae774aa7bc98ee7b7bcb122335b61cd652
 set -euo pipefail
