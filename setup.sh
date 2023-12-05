@@ -308,6 +308,21 @@ clear
 }
 
 clear
+#INFO ISP VPS
+ISP=$(cat /etc/xray/isp)
+CITY=$(cat /etc/xray/city)
+IPVPS=$(curl -s ipv4.icanhazip.com)
+domain=$(cat /etc/xray/domain)
+RAM=$(free -m | awk 'NR==2 {print $2}')
+USAGERAM=$(free -m | awk 'NR==2 {print $3}')
+MEMOFREE=$(printf '%-1s' "$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2 }')")
+LOADCPU=$(printf '%-0.00001s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')")
+MODEL=$(cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g')
+CORE=$(printf '%-1s' "$(grep -c cpu[0-9] /proc/stat)")
+DATEVPS=$(date +'%d/%m/%Y')
+TIMEZONE=$(printf '%(%H:%M:%S)T')
+SERONLINE=$(uptime -p | cut -d " " -f 2-10000)
+clear
 #GANTI PASSWORD DEFAULT
 restart_system(){
     USRSC=$(curl -sS https://raw.githubusercontent.com/rwrtx/izin/main/ip | grep $MYIP | awk '{print $2}')
@@ -321,7 +336,7 @@ restart_system(){
 <code>IPVPS      :</code><code>$MYIP</code>
 <code>Domain     :</code><code>$domain</code>
 <code>ISP        :</code><code>$ISP</code>
-<code>OS         :</code><code>$cat</code>
+<code>OS         :</code><code>$MODEL</code>
 <code>Time       :</code><code>$TIMEZONE</code>
 <code>Exp Sc.    :</code><code>$exp</code>
 <code>────────────────────</code>
