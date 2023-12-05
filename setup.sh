@@ -397,9 +397,9 @@ restart_system(){
 <code>ISP        :</code><code>$ISP</code>
 <code>LOKASI VPS :</code><code>$CITY</code>
 <code>OS         :</code><code>$MODEL</code>
-<code>RAM        :</code><code>$RAM MB</code>
+<code>RAM        :</code><code>$RAM<code>MB</code>
 <code>Time       :</code><code>$TIMEZONE</code>
-<code>Exp Sc.    :</code><code>${exp}, ${$certifacate} Days</code>
+<code>Exp Sc.    :</code><code>${exp}, ${$certifacate}<code>Days</code>
 <code>────────────────────</code>
 <b>   R32-WRTx TUNNELING   </b>
 <code>────────────────────</code>
