@@ -298,7 +298,7 @@ echo $host1 > /root/domain
 echo ""
 elif [[ $host == "2" ]]; then
 #install cf
-wget $REPO="https://raw.githubusercontent.com/rwrtx/limit/cf.sh && chmod +x cf.sh && ./cf.sh"
+wget ${REPO}limit/cf.sh && chmod +x cf.sh && ./cf.sh
 rm -f /root/cf.sh
 clear
 else
