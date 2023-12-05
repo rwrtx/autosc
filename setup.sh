@@ -322,7 +322,6 @@ CORE=$(printf '%-1s' "$(grep -c cpu[0-9] /proc/stat)")
 DATEVPS=$(date +'%d/%m/%Y')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 SERONLINE=$(uptime -p | cut -d " " -f 2-10000)
-
 clear
 #GANTI PASSWORD DEFAULT
 restart_system(){
