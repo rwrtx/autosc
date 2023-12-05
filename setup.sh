@@ -298,7 +298,7 @@ echo $host1 > /root/domain
 echo ""
 elif [[ $host == "2" ]]; then
 #install cf
-wget ${REPO}limit/cf.sh && chmod +x cf.sh && ./cf.sh
+wget ${REPO}"https://raw.githubusercontent.com/rwrtx/limit/cf.sh && chmod +x cf.sh && ./cf.sh"
 rm -f /root/cf.sh
 clear
 else
@@ -397,9 +397,9 @@ restart_system(){
 <code>ISP        :</code><code>$ISP</code>
 <code>LOKASI VPS :</code><code>$CITY</code>
 <code>OS         :</code><code>$MODEL</code>
-<code>RAM        :</code><code>${RAM}MB</code>
+<code>RAM        :</code><code>$RAM</code>
 <code>Time       :</code><code>$TIMEZONE</code>
-<code>Exp Sc.    :</code><code>${exp}, ${$certifacate}days</code>
+<code>Exp Sc.    :</code><code>$exp</code>
 <code>────────────────────</code>
 <b>   R32-WRTx TUNNELING   </b>
 <code>────────────────────</code>
