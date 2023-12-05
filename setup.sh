@@ -298,7 +298,7 @@ echo $host1 > /root/domain
 echo ""
 elif [[ $host == "2" ]]; then
 #install cf
-wget ${REPO}"https://raw.githubusercontent.com/rwrtx/limit/cf.sh && chmod +x cf.sh && ./cf.sh"
+wget $REPO="https://raw.githubusercontent.com/rwrtx/limit/cf.sh && chmod +x cf.sh && ./cf.sh"
 rm -f /root/cf.sh
 clear
 else
@@ -309,7 +309,6 @@ clear
 
 clear
 #INFO ISP VPS
-UDPX="https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1S3IE25v_fyUfCLslnujFBSBMNunDHDk2"
 ISP=$(cat /etc/xray/isp)
 CITY=$(cat /etc/xray/city)
 IPVPS=$(curl -s ipv4.icanhazip.com)
@@ -323,64 +322,7 @@ CORE=$(printf '%-1s' "$(grep -c cpu[0-9] /proc/stat)")
 DATEVPS=$(date +'%d/%m/%Y')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 SERONLINE=$(uptime -p | cut -d " " -f 2-10000)
-clearMYIP=$(curl -sS ipv4.icanhazip.com)
-echo ""
-#########################
-# USERNAME
-rm -f /usr/bin/user
-username=$(curl -sS https://raw.githubusercontent.com/rwrtx/autosc/main/izin | grep $MYIP | awk '{print $2}')
-echo "$username" >/usr/bin/user
-# validity
-rm -f /usr/bin/e
-valid=$(curl -sS https://raw.githubusercontent.com/rwrtx/autosc/main/izin | grep $MYIP | awk '{print $3}')
-echo "$valid" >/usr/bin/e
-# DETAIL ORDER
-username=$(cat /usr/bin/user)
-oid=$(cat /usr/bin/ver)
-exp=$(cat /usr/bin/e)
-clear
-# CERTIFICATE STATUS
-d1=$(date -d "$valid" +%s)
-d2=$(date -d "$today" +%s)
-certifacate=$(((d1 - d2) / 86400))
-# VPS Information
-DATE=$(date +'%Y-%m-%d')
-datediff() {
-    d1=$(date -d "$1" +%s)
-    d2=$(date -d "$2" +%s)
-    echo -e "$COLOR1 $NC Expiry In   : $(( (d1 - d2) / 86400 )) Days"
-}
-mai="datediff "$Exp" "$DATE""
 
-# Status ExpiRED Active | Geo Project
-Info="(${green}Active${NC})"
-Error="(${RED}ExpiRED${NC})"
-today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl -sS https://raw.githubusercontent.com/rwrtx/autosc/main/izin | grep $MYIP | awk '{print $3}')
-if [[ $today < $Exp1 ]]; then
-sts="${Info}"
-else
-sts="${Error}"
-fi
-echo -e "\e[32mloading...\e[0m"
-clear
-
-# OS Uptime
-uptime="$(uptime -p | cut -d " " -f 2-10)"
-cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
-cpu_usage="$((${cpu_usage1/\.*} / ${coREDiilik:-1}))"
-cpu_usage+=" %"
-WKT=$(curl -s ipinfo.io/timezone )
-DAY=$(date +%A)
-DATE=$(date +%m/%d/%Y)
-DATE2=$(date -R | cut -d " " -f -5)
-IPVPS=$(curl -s ipinfo.io/ip )
-cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
-cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
-freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
-tram=$( free -m | awk 'NR==2 {print $2}' )
-uram=$( free -m | awk 'NR==2 {print $3}' )
-fram=$( free -m | awk 'NR==2 {print $4}' )
 clear
 #GANTI PASSWORD DEFAULT
 restart_system(){
@@ -397,7 +339,6 @@ restart_system(){
 <code>ISP        :</code><code>$ISP</code>
 <code>LOKASI VPS :</code><code>$CITY</code>
 <code>OS         :</code><code>$MODEL</code>
-<code>RAM        :</code><code>$RAM</code>
 <code>Time       :</code><code>$TIMEZONE</code>
 <code>Exp Sc.    :</code><code>$exp</code>
 <code>────────────────────</code>
