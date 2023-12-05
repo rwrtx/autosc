@@ -30,7 +30,7 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://raw.githubusercontent.com/rwrtx/autosc/main/limit/menu.zip
+    wget https://raw.githubusercontent.com/rwrtx/autosc/main/limit/limit-ip
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
