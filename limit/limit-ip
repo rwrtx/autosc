@@ -1,5 +1,4 @@
 #!/bin/bash
-
 function send_log(){
 CHATID="5423129090"
 KEY="6782755839:AAEtaEt8JKHdzXvIDdzNAn1kYuTQxOdgyH4"
