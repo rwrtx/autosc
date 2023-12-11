@@ -338,6 +338,7 @@ restart_system(){
 <code>OS LINUX :</code><code>$MODEL</code>
 <code>Time     :</code><code>$TIMEZONE</code>
 <code>Exp Sc.  :</code><code>$exp</code>
+<code>certifacate  :</code><code>$certifacate</code>
 <code>────────────────────</code>
 <b>    R32WRTx TUNNELING   </b>
 <code>────────────────────</code>
