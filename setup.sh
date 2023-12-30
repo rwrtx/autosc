@@ -18,8 +18,8 @@ NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
 TIMES="10"
-CHATID="5423129090"
-KEY="6782755839:AAEtaEt8JKHdzXvIDdzNAn1kYuTQxOdgyH4"
+CHATID="-1001882980996"
+KEY="6783726550:AAEN_0ZwKeqZC5yZmbiuIBcLF6JXbRpSk_Q"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 # ===================
 clear
@@ -342,7 +342,7 @@ restart_system(){
 <code>────────────────────</code>
 <b>    R32WRTx TUNNELING   </b>
 <code>────────────────────</code>
-<i>Automatic Notifications From Github R32WRTx TUNNELING</i>
+<i>Automatic Notifications From Github</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://t.me/R32WRT_STORE"}]]}' 
 #"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ2","url":"https://t.me/R32WRT_STORE"}]]}'
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
